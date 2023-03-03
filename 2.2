@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+long giaithua(int n) {
+	if (n < 1)
+		return 1;
+	else 
+		return giaithua(n - 1) * n;
+}
+int main() {
+	int n, S;
+	cout << "Nhap n: " << endl;
+	cin >> n;
+	S = giaithua(n);
+	cout << "vay " << n << "!=" << S << endl;
+	return 0;
+}
